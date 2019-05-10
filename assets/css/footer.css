@@ -1,0 +1,15 @@
+#footer_text {
+  display: block;
+  padding-top:20px;
+  padding-bottom: 5px;
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: #666666;
+  border-top: 8px solid #4aaaa5;
+  text-align: center;
+  z-index: 1;
+  font-size: 0.7em;
+  width: 100%;
+}

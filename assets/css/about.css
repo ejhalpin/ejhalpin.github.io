@@ -1,0 +1,21 @@
+#picture_box {
+  float: left;
+  position: relative;
+  width: 250px;
+  padding: 10px 10px 10px 0px;
+  z-index: 0;
+}
+
+#profile_image {
+  width: 250px;
+  height: 300px;
+}
+
+#caption {
+  font-size: 0.8em;
+  color: #ffffff;
+  bottom: -10px;
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+}
