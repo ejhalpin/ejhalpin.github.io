@@ -1,34 +1,75 @@
-button:hover{
-  background-color: #48b873;
+.container{
+  box-sizing:border-box;
+  width:960px;
+  flex: 1 0 auto;
+  margin:0 auto;
+  background-color:white;
+  padding:10px;
+  margin-top:7rem;
+  border:2px solid #dddddd;
 }
 
-#input_name, #input_email{
-  width: 100%;
+input, textarea{
+  width:100%;
+  box-sizing:border-box;
+  margin-bottom: 1rem;
+  color:#777777;
+  font-family:'Montserrat', sans-serif;
+  font-size: 1rem;
+
 }
 
-#input_message{
-  width: 100%;
-  height: 200px;
-  margin-bottom: 20px;
-  color: #777777;
-  font-size: 14px;
+label{
+  padding: 0.5rem 0;
+  line-height:2rem;
 }
 
-button {
-  display: block;
-  float: left;
-  bottom: 0;
-  background-color: #4aaaa5;
+.message{
+  height:200px;
+}
+
+button{
+  background-color:#4aaaa5;
+  line-height:3rem;
+  padding: 0 3rem;
+  font-family: 'Montserrat', sans-serif;
+  border:none;
   color: #ffffff;
-  border: 1px solid #dddddd;
-  padding: 10px;
-  width: 100px;
+  border-radius:5px;
+  font-size:1rem;
 }
-input {
-  color: #777777;
-  font-family: Arial, 'Helvetica Neue' Helvetica, sans-serif;
-  font-size: 14px;
-  padding: 2px;
+
+@media only screen and (max-width:980px){
+  .container{
+    margin-left:20px;
+    margin-right:20px;
+    width: auto;
+    font-size:16px;
+  }
+
+  
+}
+
+@media only screen and (max-width:768px){
+  .container{
+    margin-left:20px;
+    margin-right:20px;
+    font-size:16px;
+  }
+
+  
+}
+
+@media only screen and (max-width:640px){
+  
+  .container{
+    margin-left:20px;
+    margin-right:20px;
+    font-size:16px;
+    margin-top:1.25rem;
+  }
+
+  
 }
 
 input:focus{
@@ -42,4 +83,8 @@ textarea:focus{
   outline: none; /*block the defualt blue outline*/
   border-color: #48b873;
   box-shadow: 0px 0px 1px 1px #48b873;
+}
+
+button:hover{
+  background-color: #48b873;
 }

@@ -1,21 +1,89 @@
-#picture_box {
-  float: left;
-  position: relative;
-  width: 250px;
-  padding: 10px 10px 10px 0px;
-  z-index: 0;
+.content{
+  flex-direction:column;
+  flex-grow: 1;
+  max-width:960px;
+  margin:0 auto;
+  background-color:#ffffff;
+  margin-top:7rem;
+  padding:10px;
+  box-sizing: border-box;
+  border:2px solid #dddddd;
+  
 }
 
-#profile_image {
-  width: 250px;
-  height: 300px;
+.picture-box{
+  float:left;
+  margin-right:1rem;
+  width:250px;
+  
 }
 
-#caption {
-  font-size: 0.8em;
-  color: #ffffff;
-  bottom: -10px;
-  margin: auto;
-  text-align: center;
-  padding: 5px;
+.picture{
+  width:250px;
+  height:280px;
+  border-radius:5px;
+}
+
+.caption{
+  display:inline-block;
+  text-align:center;
+  font-size: 12px;
+}
+
+@media only screen and (max-width:980px){
+  .content{
+    margin-left:20px;
+    margin-right:20px;
+    font-size:16px;
+  }
+
+  .picture{
+    width:200px;
+    height:224px;
+  }
+
+  .picture-box{
+    width:200px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .content{
+    margin-left:20px;
+    margin-right:20px;
+    font-size:16px;
+  }
+
+  .picture{
+    width:200px;
+    height:224px;
+  }
+
+  .picture-box{
+    width:200px;
+    padding-bottom:1rem;
+  }
+}
+
+@media only screen and (max-width:640px){
+  
+  .content{
+    margin-left:20px;
+    margin-right:20px;
+    font-size:16px;
+    margin-top:1.25rem;
+  }
+
+  .picture{
+    width:200px;
+    height:224px;
+  }
+
+  .picture-box{
+    width:200px;
+    padding-bottom:1rem;
+    margin: 0 auto;
+    float:none;
+  }
+  
 }
