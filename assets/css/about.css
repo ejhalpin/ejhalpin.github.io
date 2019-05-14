@@ -1,7 +1,7 @@
 .content{
   flex-direction:column;
   flex-grow: 1;
-  max-width:960px;
+  width:960px;
   margin:0 auto;
   background-color:#ffffff;
   margin-top:7rem;
@@ -20,7 +20,7 @@
 
 .picture{
   width:250px;
-  height:280px;
+  height:300px;
   border-radius:5px;
 }
 
@@ -35,11 +35,12 @@
     margin-left:20px;
     margin-right:20px;
     font-size:16px;
+    width:auto;
   }
 
   .picture{
     width:200px;
-    height:224px;
+    height:240px;
   }
 
   .picture-box{
@@ -47,23 +48,6 @@
   }
 }
 
-@media only screen and (max-width:768px){
-  .content{
-    margin-left:20px;
-    margin-right:20px;
-    font-size:16px;
-  }
-
-  .picture{
-    width:200px;
-    height:224px;
-  }
-
-  .picture-box{
-    width:200px;
-    padding-bottom:1rem;
-  }
-}
 
 @media only screen and (max-width:640px){
   
