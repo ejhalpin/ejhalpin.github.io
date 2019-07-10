@@ -1,102 +1,58 @@
-.container {
-  width: 960px;
-  flex: 1 0 auto;
-  background-color: white;
-  margin: 6rem auto 0 auto;
-  display: grid;
-  grid-template-columns: auto 280px 280px auto;
-  grid-template-rows: 80px 200px 200px 200px;
-  grid-template-areas:
-    "header header header header"
-    ". col-1 col-2 ."
-    ". col-1 col-2 ."
-    ". col-1 col-2 .";
-  column-gap: 2rem;
-  row-gap: 2rem;
-  padding-bottom: 1rem;
+#games,
+#uis,
+#projects {
+  width: 100%;
 }
 
-.box-1 {
-  position: relative;
-  grid-area: col-1;
-  width: 280px;
-  height: 200px;
-}
-
-.box-2 {
-  position: relative;
-  grid-area: col-2;
-  width: 280px;
-  height: 200px;
-}
-
-.header {
-  grid-area: header;
-  font-size: 18px;
+.tile-box {
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.img {
-  width: 280px;
-  height: 200px;
-  border-radius: 5px;
-  flex-basis: 280px 1;
-  margin-bottom: -8px;
+.tile {
+  display: flex;
+  width: 350px;
+  height: 175px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 2px 0px #000;
+  margin: 10px;
 }
 
-.label {
-  display: border-box;
-  position: absolute;
-  bottom: 15px;
+.list-aside {
+  width: 175px;
+  height: 175px;
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+}
+
+.tile-image {
+  width: 175px;
+  height: 175px;
+}
+
+h3 {
+  width: 100%;
   text-align: center;
-  background-color: inherit;
-  padding: 0.5rem 0;
-  width: 280px;
-  color: white;
-  font-family: "Old Standard TT", serif;
-  font-size: 18px;
+  margin: 5px 0;
 }
 
-a.img-link {
-  background-color: #4aaaa5;
+ul {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 5px 0;
 }
 
-a.img-link:hover {
-  background-color: #48b873;
-}
-@media only screen and (max-width: 980px) {
-  .container {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: auto;
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .container {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 16px;
-    margin-top: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .box-1 {
-    margin: 0 auto 10px;
-  }
-  .box-2 {
-    margin: 0 auto 10px;
-  }
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
 }

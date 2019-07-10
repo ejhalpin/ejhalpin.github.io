@@ -4,70 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Local Stylesheets -->
     <link rel="stylesheet" href="assets/css/global.css" />
-    <link rel="stylesheet" href="assets/css/navigation.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/portfolio.css" />
-    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Montserrat" rel="stylesheet" />
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <title>Eugene Halpin | Portfolio</title>
   </head>
-
   <body>
-    <nav class="navbar">
-      <div class="nav-box">
-        <div class="brand">Eugene Halpin</div>
-        <div class="menu">
-          <a href="index.html" class="pad">about</a>
-          <a href="#" class="active pad sm-pipe">portfolio</a>
-          <a href="contact.html" class="pad">contact</a>
+    <div class="container">
+      <div class="navbar">
+        <div class="nav-link link" id="about" data-link="index.html">about</div>
+        <div class="nav-link" id="portfolio">portfolio</div>
+        <div class="nav-link link" id="resume" data-link="resume.html">resume</div>
+        <div class="nav-link" id="contact">contact</div>
+        <div class="nav-icon link" id="github" data-link="https://www.github.com/ejhalpin"></div>
+        <div class="nav-icon link" id="linkedin" data-link="https://www.linkedin.com/in/eugene-halpin"></div>
+      </div>
+      <section>
+        <div id="games"></div>
+      </section>
+      <section>
+        <div id="uis"></div>
+      </section>
+      <section>
+        <div id="projects"></div>
+      </section>
+    </div>
+    <div id="hidden">
+      <div id="contact-modal" class="modal">
+        <form>
+          <div class="label">Name</div>
+          <input type="text" id="name" name="name" required placeholder="arya stark" />
+          <div class="label">Email</div>
+          <input type="email" id="email" placeholder="arya.stark@winterfell.com" required />
+          <div class="label">Phone</div>
+          <input type="tel" pattern="[0-9]{10}" id="phone" placeholder="optional" required />
+          <div class="label">Message</div>
+          <textarea id="message" placeholder="winter is coming..."></textarea>
+          <div class="buttons">
+            <button type="button" id="cancel">cancel</button>
+            <input type="submit" id="submit" value="submit" disabled />
+          </div>
+        </form>
+      </div>
+      <div id="submit-modal-loading" class="modal center">
+        <img src="assets/images/icons/spinner.gif" alt="loading gif" class="loading-gif" />
+      </div>
+      <div id="submit-modal-success" class="modal center">
+        <div class="success-message">
+          <p>
+            Thank you for reaching out to me. I will do my best to reply to your message within 24 hours. You can also email me directly at the address below.
+          </p>
+          <p><a href="mailto:ejhalpin3@gmail.com">ejhalpin3@gmail.com</a></p>
+          <button id="close">close</button>
         </div>
       </div>
-    </nav>
-    <div class="container" id="container">
-      <header class="header">
-        <h2>Portfolio</h2>
-        <hr />
-      </header>
-      <div class="box-1">
-        <a href="#" class="img-link"
-          ><img src="assets/images/circuit.jpg" alt="Hangman" class="img" />
-          <span class="label"> Hangman </span>
-        </a>
-      </div>
-      <div class="box-2">
-        <a href="#" class="img-link">
-          <img src="assets/images/horse.jpg" alt="RPG Game" class="img" />
-          <span class="label">RPG Game</span>
-        </a>
-      </div>
-      <div class="box-1" style="grid-row-start:3;">
-        <a href="#" class="img-link">
-          <img src="assets/images/kick.jpg" alt="Trivia Game" class="img" />
-          <span class="label">Trivia Game</span>
-        </a>
-      </div>
-      <div class="box-2" style="grid-row-start:3;">
-        <a href="#" class="img-link">
-          <img src="assets/images/mini.jpg" alt="Rutgers Info Widget" class="img" />
-          <span class="label">Rutgers Info Widget</span>
-        </a>
-      </div>
-      <div class="box-1" style="grid-row-start:4;">
-        <a href="#" class="img-link">
-          <img src="assets/images/orchid.jpg" alt="Rock Paper Scissors" class="img" />
-          <span class="label">Rock Paper Scissors</span>
-        </a>
-      </div>
     </div>
-    <footer>
-      <a href="https://www.github.com/ejhalpin" class="logo">
-        <img src="assets/images/logos/GitHub.png" alt="GitHub" class="gh-logo" />
-      </a>
-      <a href="https://www.linkedin.com/in/eugene-halpin" class="logo">
-        <img src="assets/images/logos/In.png" alt="GitHub" class="in-logo" />
-      </a>
-      <br />
-      <span class="footer-text">copyright &copy;</span>
-    </footer>
+    <!-- Firebase Real Time Database -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <!-- Local Scripts -->
+    <script src="assets/javascript/logic.js"></script>
+    <script src="assets/javascript/portfolio.js"></script>
+    <script src="assets/javascript/contact.js"></script>
   </body>
 </html>

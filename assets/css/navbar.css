@@ -1,0 +1,43 @@
+.navbar {
+  width: 100%;
+  height: max-content;
+  background-color: #21180d;
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  position: fixed;
+  margin-top: -44px;
+  z-index: 500;
+}
+
+.nav-link {
+  color: #fcfcfc;
+  font-size: 20px;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.nav-icon {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.nav-icon:hover {
+  opacity: 0.8;
+}
+#github {
+  background-image: url("../images/icons/github/GitHub-Mark-Light-32px.png");
+}
+
+#linkedin {
+  background-image: url("../images/icons/linkedin/LI-In-Bug-light.png");
+}

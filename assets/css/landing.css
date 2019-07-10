@@ -1,0 +1,40 @@
+.landing {
+  width: 90%;
+  height: max-content;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.brand-main {
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+#home-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: max-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 240px;
+  background-image: url("../images/profile.png");
+  background-size: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px #1c1c1c;
+  margin-right: 20px;
+}
+
+.text {
+  color: #1c1c1c;
+  margin-left: 20px;
+  max-width: 400px;
+  min-width: 280px;
+}
+
+/* responsive media breaks */

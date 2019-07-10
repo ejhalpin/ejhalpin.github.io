@@ -1,23 +1,69 @@
-html,body{
-  height:100%;
+html,
+body {
+  height: 100%;
 }
 
-body{
-  display:flex;
-  flex-direction:column;
-  margin:0;
-  color:#777777;
-  font-family:'Montserrat', sans-serif;
-  background-image: url("../images/white-waves.png");
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #cfba58;
+  background-image: linear-gradient(to bottom, #f0efd1, 30%, #cfba58);
+  color: #1c1c1c;
+  position: relative;
+  margin-top: 44px;
 }
 
-h2{
-  color:#4aaaa5;
-  font-family:'Old Standard TT', serif;
+.hr {
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), 10%, #1c1c1c 50%, 90%, rgba(0, 0, 0, 0));
 }
 
-a{
-  text-decoration:none;
-  color:inherit;
+.mt {
+  margin-top: 20px;
+}
+.mb {
+  margin-bottom: 20px;
 }
 
+.drop {
+  width: 2px;
+  height: 40px;
+  background-image: linear-gradient(to top, #1c1c1c, 50%, rgba(0, 0, 0, 0));
+  transform: rotate(10deg);
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+  background-color: rgba(28, 28, 28, 0.26);
+  border-top: 3px solid #1c1c1c;
+  border-bottom: 3px solid #1c1c1c;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+a:hover {
+  text-shadow: 0 0 2px #f0efd1;
+}
+
+p {
+  margin: 5px 0;
+}
