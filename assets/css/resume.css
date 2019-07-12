@@ -1,0 +1,42 @@
+h2 {
+  width: 100%;
+  text-align: center;
+  margin: 5px 0;
+}
+
+h3,
+h4 {
+  margin: 5px 0;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.center {
+  padding: 5px 0;
+  width: 100%;
+  white-space: normal;
+  text-align: center;
+}
+
+#skills,
+#experience,
+#education {
+  background-color: unset;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+#download {
+  background-color: unset;
+  border: none;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
