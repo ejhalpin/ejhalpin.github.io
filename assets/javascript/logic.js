@@ -1,6 +1,6 @@
 $(document).on("click", ".link", function() {
   var link = $(this).attr("data-link");
-  if (link.includes("www")) {
+  if (link.includes("www") || link.includes("pdf")) {
     window.open(link, "_blank");
   } else if (link.includes(".html")) {
     window.location.href = link;
