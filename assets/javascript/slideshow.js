@@ -60,6 +60,12 @@ const all = [
     repo: "NYT-search"
   },
   {
+    title: "LIRI",
+    desc: "A node cli that performs searches for bands/artists and movies and returns concert information, song information, or movie information.",
+    bullets: ["node.js", "npm", "fs", "inquirer", "axios", "node spotify wrapper"],
+    repo: "liri-node-app"
+  },
+  {
     title: "Recipe Box",
     desc:
       "A search and save UI for recipes. Backed by the Edamam Recipe API, this site allows users to search for and save recipes to a firebase real-time database. Firebase authentication allows users to persist their data across sessions and devices.",

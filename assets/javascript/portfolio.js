@@ -72,7 +72,14 @@ const projects = [
     repo: "Project1"
   }
 ];
-
+const clis = [
+  {
+    title: "LIRI",
+    desc: "A node cli that performs searches for bands/artists and movies and returns concert information, song information, or movie information.",
+    bullets: ["node.js", "npm", "fs", "inquirer", "axios", "node spotify wrapper"],
+    repo: "liri-node-app"
+  }
+];
 //build tiles on the fly
 function layOutTiles(ref) {
   var sourceArray;
@@ -90,6 +97,9 @@ function layOutTiles(ref) {
       sourceArray = projects;
       sectionName = "Projects";
       break;
+    case "clis":
+      sourceArray = clis;
+      sectionName = "Command Line Interfaces";
     default:
       console.log("default reached in loadContent");
   }
@@ -125,5 +135,6 @@ function layOutTiles(ref) {
 $(document).ready(function() {
   layOutTiles("games");
   layOutTiles("uis");
+  layOutTiles("clis");
   layOutTiles("projects");
 });
