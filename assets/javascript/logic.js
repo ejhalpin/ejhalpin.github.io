@@ -9,3 +9,5 @@ $(document).on("click", ".link", function() {
     window.open(url, "_blank");
   }
 });
+
+//nothing below
