@@ -70,13 +70,6 @@ const projects = [
       "A search and save UI for recipes. Backed by the Edamam Recipe API, this site allows users to search for and save recipes to a firebase real-time database. Firebase authentication allows users to persist their data across sessions and devices.",
     bullets: ["HTML 5, CSS", "jQuery", "Ajax Requests", "Giphy API", "Edamam API", "firebase real-time database", "firebase authentication"],
     repo: "Project1"
-  },
-  {
-    title: "Friend Finder",
-    desc:
-      "A full stack socila media application. Backed by JAWS-DB (mySQL) and node and implementing crypto password based keys, this fun and friendly app lets users create and take surveys. Thier scores are compared and users are matched to each other based on their answers.",
-    bullets: ["HTML 5, Bootstrap, jQuery, node, express, axios, mySQL, Giphy-API, Heroku Deploy"],
-    repo: "FriendFinder"
   }
 ];
 const clis = [
@@ -94,6 +87,13 @@ const node = [
       "A full stack application backed by JAWS-DB (mySQL) and node. This simple and fun application lets users contribute to a living story with edits, new contributions, and all around fun!",
     bullets: ["HTML 5, Bootstrap, CSS3, jQuery, node, mySQL, express, Heroku Deploy"],
     repo: "story-chain"
+  },
+  {
+    title: "Friend Finder",
+    desc:
+      "A full stack socila media application. Backed by JAWS-DB (mySQL) and node and implementing crypto password based keys, this fun and friendly app lets users create and take surveys. Thier scores are compared and users are matched to each other based on their answers.",
+    bullets: ["HTML 5, Bootstrap, jQuery, node, express, axios, mySQL, Giphy-API, Heroku Deploy"],
+    repo: "FriendFinder"
   }
 ];
 //build tiles on the fly
