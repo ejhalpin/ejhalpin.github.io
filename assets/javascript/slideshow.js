@@ -78,6 +78,13 @@ const all = [
       "A full stack socila media application. Backed by JAWS-DB (mySQL) and node and implementing crypto password based keys, this fun and friendly app lets users create and take surveys. Thier scores are compared and users are matched to each other based on their answers.",
     bullets: ["HTML 5, Bootstrap, jQuery, node, axios, mySQL, Giphy-API, Heroku"],
     repo: "FriendFinder"
+  },
+  {
+    title: "Story Chain",
+    desc:
+      "A full stack application backed by JAWS-DB (mySQL) and node. This simple and fun application lets users contribute to a living story with edits, new contributions, and all around fun!",
+    bullets: ["HTML 5, Bootstrap, CSS3, jQuery, node, mySQL, express, Heroku Deploy"],
+    repo: "story-chain"
   }
 ];
 var currentSlide = 0;

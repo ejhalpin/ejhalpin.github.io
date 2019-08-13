@@ -75,7 +75,7 @@ const projects = [
     title: "Friend Finder",
     desc:
       "A full stack socila media application. Backed by JAWS-DB (mySQL) and node and implementing crypto password based keys, this fun and friendly app lets users create and take surveys. Thier scores are compared and users are matched to each other based on their answers.",
-    bullets: ["HTML 5, Bootstrap, jQuery, node, axios, mySQL, Giphy-API, Heroku"],
+    bullets: ["HTML 5, Bootstrap, jQuery, node, express, axios, mySQL, Giphy-API, Heroku Deploy"],
     repo: "FriendFinder"
   }
 ];
@@ -85,6 +85,15 @@ const clis = [
     desc: "A node cli that performs searches for bands/artists and movies and returns concert information, song information, or movie information.",
     bullets: ["node.js", "npm", "fs", "inquirer", "axios", "node spotify wrapper"],
     repo: "liri-node-app"
+  }
+];
+const node = [
+  {
+    title: "Story Chain",
+    desc:
+      "A full stack application backed by JAWS-DB (mySQL) and node. This simple and fun application lets users contribute to a living story with edits, new contributions, and all around fun!",
+    bullets: ["HTML 5, Bootstrap, CSS3, jQuery, node, mySQL, express, Heroku Deploy"],
+    repo: "story-chain"
   }
 ];
 //build tiles on the fly
@@ -107,8 +116,11 @@ function layOutTiles(ref) {
     case "clis":
       sourceArray = clis;
       sectionName = "Command Line Interfaces";
-    default:
-      console.log("default reached in loadContent");
+      break;
+    case "node":
+      sourceArray = node;
+      sectionName = "Full Stack node.js Projects";
+      break;
   }
   var target = $("#" + ref);
   var tileBox = $("<div>")
@@ -143,5 +155,6 @@ $(document).ready(function() {
   layOutTiles("games");
   layOutTiles("uis");
   layOutTiles("clis");
+  layOutTiles("node");
   layOutTiles("projects");
 });
