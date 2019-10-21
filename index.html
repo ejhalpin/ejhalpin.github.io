@@ -7,7 +7,11 @@
     <!-- Firebase CDN -->
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <!-- Local Stylesheets -->
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/navbar.css" />
@@ -20,11 +24,28 @@
     <div class="container">
       <div class="navbar">
         <div class="nav-link" id="about">about</div>
-        <div class="nav-link link" id="portfolio" data-link="portfolio.html">portfolio</div>
-        <div class="nav-link link" id="resume" data-link="resume.html">resume</div>
+        <div class="nav-link link" id="portfolio" data-link="portfolio.html">
+          portfolio
+        </div>
+        <div class="nav-link link" id="resume" data-link="resume.html">
+          resume
+        </div>
         <div class="nav-link" id="contact">contact</div>
-        <div class="nav-icon link" id="github" data-link="https://www.github.com/ejhalpin"></div>
-        <div class="nav-icon link" id="linkedin" data-link="https://www.linkedin.com/in/eugene-halpin"></div>
+        <div
+          class="nav-icon link"
+          id="github"
+          data-link="https://www.github.com/ejhalpin"
+        ></div>
+        <div
+          class="nav-icon link"
+          id="linkedin"
+          data-link="https://www.linkedin.com/in/eugene-halpin"
+        ></div>
+      </div>
+      <div class="alert">
+        Eugene's portfolio has moved to
+        <a href="https://eugenehalpin.herokuapp.com/">a new location</a>. You'll
+        find a complete list of his apps there.
       </div>
       <div class="landing">
         <div id="brand" class="brand-main">Eugene Halpin</div>
@@ -32,21 +53,30 @@
           <div class="profile-pic"></div>
           <div class="text">
             <p>
-              Eugene Halpin began his professional career as a teacher, specializing in physics. Eugene's problem solving skills, innovative teaching methods,
-              and ability to make personal connections made him a favorite among students and coworkers alike. While teaching, Eugene began mentoring high
-              school robotics teams and coaching the kids on how to build and code robots. Though Eugene possesses the confidence and organizational skills to
-              manage large groups of people, he is also a natural problem-solver with the capability to excel at detailed, technical work. Eugene taught himself
-              Java, HTML, CSS, and Javascript as a hobby.
+              Eugene Halpin began his professional career as a teacher,
+              specializing in physics. Eugene's problem solving skills,
+              innovative teaching methods, and ability to make personal
+              connections made him a favorite among students and coworkers
+              alike. While teaching, Eugene began mentoring high school robotics
+              teams and coaching the kids on how to build and code robots.
+              Though Eugene possesses the confidence and organizational skills
+              to manage large groups of people, he is also a natural
+              problem-solver with the capability to excel at detailed, technical
+              work. Eugene taught himself Java, HTML, CSS, and Javascript as a
+              hobby.
             </p>
 
             <p>
-              In Eugene’s spare time, he does woodwork. He is a master craftsman and his patience and attention to detail make his projects beautiful. He
-              especially loves crafting large pieces of gorgeous furniture that are close to impossible to move.
+              In Eugene’s spare time, he does woodwork. He is a master craftsman
+              and his patience and attention to detail make his projects
+              beautiful. He especially loves crafting large pieces of gorgeous
+              furniture that are close to impossible to move.
             </p>
 
             <p>
-              Eugene lives with his perfect daughter and kickass wife in Wendell, NC and is looking for challenging work with plenty of opportunities for growth
-              and advancement. He likes money, too.
+              Eugene lives with his perfect daughter and kickass wife in
+              Wendell, NC and is looking for challenging work with plenty of
+              opportunities for growth and advancement. He likes money, too.
             </p>
           </div>
         </div>
@@ -61,9 +91,20 @@
           <div class="label">Name</div>
           <input type="text" id="name" placeholder="arya stark" required />
           <div class="label">Email</div>
-          <input type="email" id="email" placeholder="arya.stark@winterfell.com" required />
+          <input
+            type="email"
+            id="email"
+            placeholder="arya.stark@winterfell.com"
+            required
+          />
           <div class="label">Phone</div>
-          <input type="tel" pattern="[0-9]{10}" id="phone" placeholder="optional" required />
+          <input
+            type="tel"
+            pattern="[0-9]{10}"
+            id="phone"
+            placeholder="optional"
+            required
+          />
           <div class="label">Message</div>
           <textarea id="message" placeholder="winter is coming..."></textarea>
           <div class="buttons">
@@ -73,12 +114,18 @@
         </form>
       </div>
       <div id="submit-modal-loading" class="modal center">
-        <img src="assets/images/icons/spinner.gif" alt="loading gif" class="loading-gif" />
+        <img
+          src="assets/images/icons/spinner.gif"
+          alt="loading gif"
+          class="loading-gif"
+        />
       </div>
       <div id="submit-modal-success" class="modal center">
         <div class="success-message">
           <p>
-            Thank you for reaching out to me. I will do my best to reply to your message within 24 hours. You can also email me directly at the address below.
+            Thank you for reaching out to me. I will do my best to reply to your
+            message within 24 hours. You can also email me directly at the
+            address below.
           </p>
           <p><a href="mailto:ejhalpin3@gmail.com">ejhalpin3@gmail.com</a></p>
           <button id="close">close</button>
